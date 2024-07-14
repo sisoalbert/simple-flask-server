@@ -61,3 +61,9 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
+
+# Deploying app
+
+```
+pip freeze > requirements.txt
+```
