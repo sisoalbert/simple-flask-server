@@ -41,14 +41,16 @@ venv\Scripts\activate.bat
 
 ### vscode
 
-````
+```
 .\venv\Scripts\activate
 ```
-## windows
+
+## deactivate
+
 ```
 deactivate
 
-````
+```
 
 ## mac
 
