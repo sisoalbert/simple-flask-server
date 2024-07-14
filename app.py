@@ -1,7 +1,9 @@
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 import json
 
 app = Flask(__name__)
+CORS(app)
 
 # Load the labs data from the JSON file
 with open('assets/labs.json') as f:
