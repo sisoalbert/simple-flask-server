@@ -13,7 +13,7 @@ You can run the application in one of the following ways:
 1. Press `F5`. This will start the application in debug mode.
 
 2. Open a terminal by going to 'View' -> 'Terminal'. Then run:
-   > `python src/main.py`
+   > `python src/app.py`
 
 This will start the application.
 
@@ -33,25 +33,31 @@ python -m venv venv
 
 # activate v env
 
-```windows
-venv\Scripts\activate.bat
+### windows
 
 ```
+venv\Scripts\activate.bat
+```
+
+### vscode
 
 ````
-.\myenv\Scripts\activate
 .\venv\Scripts\activate
-``
-
-```windows
+```
+## windows
+```
 deactivate
 
 ````
 
-```mac
+## mac
+
+```
 source venv/bin/activate
 ```
 
-```install packages
+## install packages
+
+```
 pip install -r requirements.txt
 ```
