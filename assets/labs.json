@@ -1,0 +1,117 @@
+[
+  {
+    "id": "2f8b8fa6-4d1a-4d2c-9cb1-8311f8e9f2b3",
+    "title": "Making Homemade Pizza",
+    "author": "John Smith",
+    "date": "2024-07-14",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Prepare the Dough",
+        "instructions": "### Ingredients Needed\n- 2 1/2 cups flour\n- 1 tsp salt\n- 1 tsp sugar\n- 1 packet yeast\n- 1 cup warm water\n\n### Prep\n- In a large bowl, combine flour, salt, and sugar. Dissolve yeast in warm water and let it sit for 5 minutes."
+      },
+      {
+        "step_number": 2,
+        "title": "Knead the Dough",
+        "instructions": "### Mix\n- Add yeast mixture to the flour mixture and stir until a dough forms.\n\n### Knead\n- Turn the dough onto a floured surface and knead for 10 minutes.\n\n### Rise\n- Place dough in a greased bowl, cover, and let rise for 1 hour."
+      },
+      {
+        "step_number": 3,
+        "title": "Prepare Toppings and Bake",
+        "instructions": "### Preheat\n- Preheat your oven to 475°F (245°C).\n\n### Roll Dough\n- Roll out the dough to your desired thickness.\n\n### Add Toppings\n- Spread sauce, cheese, and toppings on the dough.\n\n### Bake\n- Bake for 12-15 minutes, until the crust is golden brown and cheese is bubbly."
+      }
+    ]
+  },
+  {
+    "id": "3b8d8e9a-5f7e-4e2c-939d-a2d1c2b5e1a4",
+    "title": "Making Spaghetti Carbonara",
+    "author": "Emily Clark",
+    "date": "2024-07-14",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Cook the Pasta",
+        "instructions": "### Ingredients Needed\n- 200g spaghetti\n- Salt\n\n### Cook\n- Bring a large pot of salted water to a boil. Add spaghetti and cook until al dente. Reserve 1 cup of pasta water, then drain."
+      },
+      {
+        "step_number": 2,
+        "title": "Prepare the Sauce",
+        "instructions": "### Ingredients Needed\n- 2 large eggs\n- 1/2 cup grated Parmesan cheese\n- 4 slices bacon, diced\n- 2 cloves garlic, minced\n\n### Prep\n- In a bowl, whisk together eggs and Parmesan cheese.\n\n### Cook Bacon\n- In a large pan, cook bacon until crispy. Add garlic and cook for another minute."
+      },
+      {
+        "step_number": 3,
+        "title": "Combine and Serve",
+        "instructions": "### Combine\n- Add cooked pasta to the pan with bacon and garlic. Remove from heat and quickly stir in egg mixture. Add reserved pasta water a little at a time until the sauce is creamy.\n\n### Serve\n- Season with salt and pepper, and serve immediately."
+      }
+    ]
+  },
+  {
+    "id": "4c9e8f5b-7d9f-4b2b-99d1-b3e4f4c2d1a5",
+    "title": "Baking Chocolate Chip Cookies",
+    "author": "Michael Johnson",
+    "date": "2024-07-14",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Prepare the Ingredients",
+        "instructions": "### Ingredients Needed\n- 1 cup butter\n- 1 cup sugar\n- 1 cup brown sugar\n- 2 eggs\n- 2 tsp vanilla extract\n- 3 cups flour\n- 1 tsp baking soda\n- 2 cups chocolate chips\n\n### Prep\n- Preheat your oven to 375°F (190°C)."
+      },
+      {
+        "step_number": 2,
+        "title": "Mix the Dough",
+        "instructions": "### Cream Butter and Sugars\n- In a large bowl, cream together butter, sugar, and brown sugar until light and fluffy.\n\n### Add Eggs and Vanilla\n- Beat in the eggs one at a time, then stir in the vanilla.\n\n### Combine Dry Ingredients\n- In another bowl, combine flour and baking soda. Gradually add to the creamed mixture. Stir in chocolate chips."
+      },
+      {
+        "step_number": 3,
+        "title": "Bake the Cookies",
+        "instructions": "### Drop Dough\n- Drop dough by rounded spoonfuls onto ungreased baking sheets.\n\n### Bake\n- Bake for 8-10 minutes, until edges are golden. Allow to cool on the baking sheet for a few minutes before transferring to wire racks to cool completely."
+      }
+    ]
+  },
+  {
+    "id": "5d9e8f6a-8d7e-4d2b-98d2-c4f4f3d2e1a6",
+    "title": "Preparing a Garden Salad",
+    "author": "Lisa Brown",
+    "date": "2024-07-14",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Gather Ingredients",
+        "instructions": "### Ingredients Needed\n- 1 head of lettuce\n- 1 cucumber\n- 2 tomatoes\n- 1 red onion\n- 1 bell pepper\n- 1/2 cup olives\n- 1/4 cup feta cheese\n\n### Prep\n- Wash and dry all vegetables."
+      },
+      {
+        "step_number": 2,
+        "title": "Chop Vegetables",
+        "instructions": "### Chop\n- Chop lettuce into bite-sized pieces. Slice cucumber, tomatoes, red onion, and bell pepper into thin slices.\n\n### Combine\n- In a large bowl, combine all chopped vegetables and olives."
+      },
+      {
+        "step_number": 3,
+        "title": "Dress and Serve",
+        "instructions": "### Dress\n- Drizzle salad with your favorite dressing. Toss to coat all ingredients.\n\n### Serve\n- Sprinkle feta cheese on top and serve immediately."
+      }
+    ]
+  },
+  {
+    "id": "6e9f8f7b-9d8e-4d2b-99e3-d5f4f3d3e1b7",
+    "title": "Grilling the Perfect Steak",
+    "author": "David Wilson",
+    "date": "2024-07-14",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Prepare the Steak",
+        "instructions": "### Ingredients Needed\n- 2 ribeye steaks\n- Salt\n- Pepper\n- Olive oil\n\n### Prep\n- Take the steaks out of the fridge 30 minutes before grilling. Rub both sides with olive oil and season generously with salt and pepper."
+      },
+      {
+        "step_number": 2,
+        "title": "Preheat the Grill",
+        "instructions": "### Preheat\n- Preheat your grill to high heat (around 450°F to 500°F). Clean and oil the grates."
+      },
+      {
+        "step_number": 3,
+        "title": "Grill the Steak",
+        "instructions": "### Grill\n- Place steaks on the grill and cook for 4-5 minutes per side for medium-rare, or to your desired doneness.\n\n### Rest\n- Remove steaks from the grill and let rest for 5 minutes before serving."
+      }
+    ]
+  }
+]
