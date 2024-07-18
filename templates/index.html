@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask MongoDB App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      form,
+      .records {
+        margin: 20px 0;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input,
+      textarea,
+      button {
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      textarea {
+        height: 100px;
+      }
+      .step {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Flask MongoDB App</h1>
+
+    <form id="addForm">
+      <label for="author">Author:</label>
+      <input type="text" name="author" id="author" required />
+
+      <label for="date">Date:</label>
+      <input type="date" name="date" id="date" required />
+
+      <label for="id">ID:</label>
+      <input type="text" name="id" id="id" required />
+
+      <label for="title">Title:</label>
+      <input type="text" name="title" id="title" required />
+
+      <div id="steps">
+        <h3>Steps</h3>
+        <div class="step">
+          <label for="step_title_1">Step Title:</label>
+          <input type="text" name="step_title" id="step_title_1" required />
+
+          <label for="step_instructions_1">Instructions:</label>
+          <textarea
+            name="step_instructions"
+            id="step_instructions_1"
+            required
+          ></textarea>
+
+          <label for="step_number_1">Step Number:</label>
+          <input type="number" name="step_number" id="step_number_1" required />
+        </div>
+      </div>
+      <button type="button" id="addStep">Add Another Step</button>
+      <button type="submit">Add Record</button>
+    </form>
+
+    <button id="loadRecords">Load Records</button>
+    <div id="records" class="records"></div>
+
+    <script>
+      let stepCount = 1;
+
+      document.getElementById("addStep").onclick = function () {
+        stepCount++;
+        const stepDiv = document.createElement("div");
+        stepDiv.className = "step";
+
+        stepDiv.innerHTML = `
+                <label for="step_title_${stepCount}">Step Title:</label>
+                <input type="text" name="step_title" id="step_title_${stepCount}" required>
+
+                <label for="step_instructions_${stepCount}">Instructions:</label>
+                <textarea name="step_instructions" id="step_instructions_${stepCount}" required></textarea>
+
+                <label for="step_number_${stepCount}">Step Number:</label>
+                <input type="number" name="step_number" id="step_number_${stepCount}" required>
+            `;
+
+        document.getElementById("steps").appendChild(stepDiv);
+      };
+
+      document.getElementById("addForm").onsubmit = async function (e) {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = {
+          author: formData.get("author"),
+          date: formData.get("date"),
+          id: formData.get("id"),
+          title: formData.get("title"),
+          steps: [],
+        };
+
+        for (let i = 1; i <= stepCount; i++) {
+          data.steps.push({
+            title: formData.get(`step_title_${i}`),
+            instructions: formData.get(`step_instructions_${i}`),
+            step_number: parseInt(formData.get(`step_number_${i}`), 10),
+          });
+        }
+
+        const response = await fetch("/add", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        const result = await response.json();
+        if (result.error) {
+          alert(`Error: ${result.error}`);
+        } else {
+          alert(`Record added with ID: ${result.inserted_id}`);
+        }
+      };
+
+      document.getElementById("loadRecords").onclick = async function () {
+        const response = await fetch("/records");
+        const records = await response.json();
+        const recordsDiv = document.getElementById("records");
+        recordsDiv.innerHTML =
+          "<ul>" +
+          records
+            .map((record) => `<li>${JSON.stringify(record)}</li>`)
+            .join("") +
+          "</ul>";
+      };
+    </script>
+  </body>
+</html>
